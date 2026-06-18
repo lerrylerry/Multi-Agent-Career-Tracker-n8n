@@ -1,0 +1,41 @@
+# ====================================================================
+# 1. SECURITY & PRIVATE WORKFLOW CREDENTIALS
+# ====================================================================
+# Ignore raw, un-scrubbed workflow JSON backups that contain your private data
+my_n8n_workflow.json
+raw_backup_*.json
+backup.json
+
+# Ignore local environment variable configuration files (where secrets are stored)
+.env
+config.json
+secret_keys.txt
+credentials.ini
+
+# ====================================================================
+# 2. PYTHON RUNTIME & TEMPORARY ENVIRONMENT FILES
+# ====================================================================
+# Ignore Python cache files generated during execution loops
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local virtual environments used to run scripts (never upload these to GitHub)
+venv/
+.venv/
+env/
+dist/
+build/
+
+# ====================================================================
+# 3. OPERATING SYSTEM & WORKSPACE TRASH
+# ====================================================================
+# Ignore macOS system display metadata settings files
+.DS_Store
+
+# Ignore Windows thumbnail database caches
+Thumbs.db
+
+# Ignore local application log sheets
+*.log
